@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,5 +10,105 @@
     <h1>Software Company</h1>
     <img width="200px" src="profile.jpg" alt="">
     <p> Address:Tower1-Ground floor, No.2, Tyche Tower, MGR, Anna Nedunchalai, Kodandarama Nagar, Perungudi, Chennai, Tamil Nadu 600096</p>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login & Signup</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #5a67d8;
+}
+
+.toggle{
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    color: blue;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Login Form -->
+    <div id="loginForm">
+        <h2>Login</h2>
+        <input type="email" placeholder="Enter Email">
+        <input type="password" placeholder="Enter Password">
+        <button>Login</button>
+        <div class="toggle" onclick="showSignup()">Don't have account? Sign Up</div>
+    </div>
+
+    <!-- Signup Form -->
+    <div id="signupForm" style="display:none;">
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="Enter Name">
+        <input type="email" placeholder="Enter Email">
+        <input type="password" placeholder="Create Password">
+        <button>Sign Up</button>
+        <div class="toggle" onclick="showLogin()">Already have account? Login</div>
+    </div>
+
+</div>
+
+<script>
+function showSignup(){
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("signupForm").style.display = "block";
+}
+
+function showLogin(){
+    document.getElementById("signupForm").style.display = "none";
+    document.getElementById("loginForm").style.display = "block";
+}
+</script>
+
 </body>
 </html>
