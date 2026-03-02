@@ -4,33 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first website</title>
-</head>
-<body background="wallpaper.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-    <p> <col>&#9742; 55545-12345</p> 
-    <p> &#x2709; info@annulartechnologies.com</p>
+        body {
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #0f172a, #1e293b);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #38bdf8;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .section {
+            padding: 60px 50px;
+            text-align: center;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #f1f5f9;
+            padding: 20px;
+            width: 250px;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width:768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Annular Technologies</h1>
+    <nav>
+        <a href="https://www.annulartechnologies.com/index.html">Home</a>
+        <a href="https://www.annulartechnologies.com/aboutus.html">About</a>
+        <a href="https://www.annulartechnologies.com/dataanalyticsservices.html">Services</a>
+    
+    </nav>
+</header>
+    
 
     <div style="text-align: center;">
     <img style="width: 90px;" src="profile.jpg" alt="">
     </div>
     <div style="text-align: center;">
-    <a style="padding-right: 20px;" href="https://www.annulartechnologies.com/index.html">Home</a>
+    <!-- <a style="padding-right: 20px;" href="https://www.annulartechnologies.com/index.html">Home</a>
         <a style="padding-right: 20px;" href="https://www.annulartechnologies.com/aboutus.html">About</a>
-            <a style="padding-right: 20px;" href="https://www.annulartechnologies.com/dataanalyticsservices.html">Services</a>
+            <a style="padding-right: 20px;" href="https://www.annulartechnologies.com/dataanalyticsservices.html">Services</a> -->
+            
             </div>
 
 
     
-    <h1 style="font-size: 40px; text-align: center; line-height: 30px;margin-top: 50px;">ANNULAR TECHNOLOGIES</h1>
+    
     <img style="width: 33%;" src="profile3.webp" alt="">
-    <img style="width: 33%;" src="profile.jpg" alt="">
+    <img style="width: 33%;" src="image4.jpg" alt="">
     <img style="width: 33%;" src="profile2.webp" alt="">
    <hr>
    <div style="text-align: center;">
     <a style="font-size: 20px; background-color: red; padding: 15px 35px 15px 35px;color: white;" href="https://www.annulartechnologies.com/aboutus.html">Read more</a>
     </div>
+    <section class="hero">
     <h2>About Our Company</h2>
     <h1>The Best Choice For Your Successful Business!</h1>
+    </section>
+    <section class="section">
     <p>At Annular, seamless customer experience is our goal to deliver our products, services and solutions that solve human challenges. We are group of highly erudite resources who build, design, code and consult to accomplish customer satisfaction in all the dimensions.<br>
 
 Annular technologies enable customers in fully automated and digitalized whereby, providing multiple cloud plat-form applications at the intersection of cloud, mobility and analytics to create simple, effective and next generation digital solutions.<br>
@@ -39,15 +146,29 @@ We are highly expertise analyst, developer, tester and consultant in establishin
 
 We are pioneered in testing with seasoned testers of dedicated test automation engineers who utilize their experience and intellect in automated UI, API, mobile, and performance testing by using top test automation tools. Our prime aim is to help enterprises to expand their regression testing covers to eradicate maximum defects right before production, and accelerate releases.
 </p>
+</section>
    <hr>
+   <section class="hero">
    <h1 style="font-size: 50px;text-align: center;">Annular Technologies</h1>
    <h4 style="font-size: 40px;text-align: center;">5th year anniversary</h4>
+   </section>
 
 <div style="text-align: center;">
 <video style="width: 20%;" src="video.mp4" controls/>
 </div>
 
+<p> <h3>&#128205; Address</h3><br> Tower1-Ground floor, No.2, Tyche Tower,<br> MGR, Anna Nedunchalai, Kodandarama Nagar,<br> Perungudi, Chennai-600096</p>
+
+   <iframe src="map.jpg" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
    
+
+   <footer>
+     <p> &#9742; 044-55545-12345</p> 
+    <p> &#x2709; info@annulartechnologies.com</p>
+    <p>© 2026 Annular Technologies. All Rights Reserved.</p>
+</footer>
+
+
    
 
 </body>
@@ -55,3 +176,162 @@ We are pioneered in testing with seasoned testers of dedicated test automation e
 
 
  
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Annular Technologies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #0f172a, #1e293b);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #38bdf8;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .section {
+            padding: 60px 50px;
+            text-align: center;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #f1f5f9;
+            padding: 20px;
+            width: 250px;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width:768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Annular Technologies</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Innovative IT Solutions</h2>
+    <p>We build modern websites, apps, and scalable cloud systems.</p>
+    <a href="#" class="btn">Get Started</a>
+</section>
+
+<section class="section">
+    <h2>About Us</h2>
+    <p>Annular Technologies is a leading IT company focused on delivering powerful digital solutions for businesses worldwide.</p>
+</section>
+
+<section class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Modern and responsive websites.</p>
+        </div>
+        <div class="card">
+            <h3>App Development</h3>
+            <p>Android & iOS mobile applications.</p>
+        </div>
+        <div class="card">
+            <h3>Cloud Solutions</h3>
+            <p>Secure and scalable cloud systems.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Contact Us</h2>
+    <p>Email: info@annulartechnologies.com</p>
+    <p>Phone: +91 9876543210</p>
+</section>
+
+<footer>
+    <p>© 2026 Annular Technologies. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html> -->
